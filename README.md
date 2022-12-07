@@ -28,7 +28,7 @@
 
 <br>
 
-# React Native - Desafio To-do List
+# React Native - Desafio ToDo List
 
 <div align="center">
 
@@ -40,6 +40,9 @@
 [**Autor**](#autor)
 
 </div>
+
+<img src=".github/assets/capa.png" alt="Landing page To-do List" />
+<br>
 
 ## Sobre o Desafio
 
