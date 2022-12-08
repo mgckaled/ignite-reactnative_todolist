@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
 	textInput: {
 		flex: 1,
 		backgroundColor: '#262626',
-		color: '#808080',
+		color: '#F2F2F2',
 		padding: 16,
 		borderRadius: 6
 	},

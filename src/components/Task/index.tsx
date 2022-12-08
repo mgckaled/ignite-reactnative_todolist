@@ -22,7 +22,9 @@ export function Task({ data, handleCheck, handleDelete }: Props) {
 				)}
 			</TouchableOpacity>
 
-			<Text style={styles.taskTitle}>{data.title}</Text>
+			<Text style={data.checked ? styles.taskTitleChecked : styles.taskTitle}>
+				{data.title}
+			</Text>
 
 			<TouchableOpacity
 				onPress={() => handleDelete(data.id)}

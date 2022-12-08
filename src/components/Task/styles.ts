@@ -33,5 +33,12 @@ export const styles = StyleSheet.create({
 		color: '#F2F2F2',
 		fontSize: 14,
 		marginHorizontal: 8
+	},
+	taskTitleChecked: {
+		flex: 1,
+		color: '#808080',
+		fontSize: 14,
+		marginHorizontal: 8,
+		textDecorationLine: 'line-through'
 	}
 })

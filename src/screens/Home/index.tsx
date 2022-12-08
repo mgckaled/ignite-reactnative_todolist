@@ -22,6 +22,13 @@ export function Home() {
 			return Alert.alert('Atenção', 'Informe o nome da tarefa.')
 		}
 
+		if (tasks) {
+			return Alert.alert(
+				'Tarefa repetida',
+				'digite um tarefa com a descrição diferente'
+			)
+		}
+
 		const newItem = {
 			id: new Date().getTime().toString(),
 			title: text,
