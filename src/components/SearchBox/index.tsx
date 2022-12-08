@@ -1,5 +1,5 @@
 import { TextInput, TouchableOpacity, View } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
+import { MaterialIcons } from '@expo/vector-icons'
 import { styles } from './styles'
 
 interface Props {
@@ -28,7 +28,7 @@ export function SearchBox({ value, setValue, handleAddItem }: Props) {
 				activeOpacity={0.7}
 				onPress={handleAddItem}
 			>
-				<Ionicons name="add-circle-outline" size={16} color="white" />
+				<MaterialIcons name="add-task" size={24} color="white" />
 			</TouchableOpacity>
 		</View>
 	)
