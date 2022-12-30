@@ -1,9 +1,11 @@
-import { View, Text } from 'native-base'
+import { VStack } from 'native-base'
+
+import { Header } from '@components/Header'
 
 export function Home() {
 	return (
-		<View>
-			<Text>Hello World</Text>
-		</View>
+		<VStack flex={1} bg="gray.400">
+			<Header />
+		</VStack>
 	)
 }

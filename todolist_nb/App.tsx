@@ -20,7 +20,7 @@ export default function App() {
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoaded ? <Loading /> : <Home />}
+			{fontsLoaded ? <Home /> : <Loading />}
 		</NativeBaseProvider>
 	)
 }
