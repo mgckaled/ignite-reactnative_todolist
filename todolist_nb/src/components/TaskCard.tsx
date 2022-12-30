@@ -18,7 +18,7 @@ export function TaskCard() {
 					<Icon
 						as={Ionicons}
 						name={Platform.OS ? 'ios-checkmark-sharp' : 'md-checkmark-sharp'}
-						size={7}
+						size={6}
 						color="gray.300"
 					></Icon>
 				</TouchableOpacity>
@@ -32,7 +32,7 @@ export function TaskCard() {
 					<Icon
 						as={Ionicons}
 						name={Platform.OS ? 'ios-trash-outline' : 'md-trash-outline'}
-						size={7}
+						size={6}
 						color="gray.300"
 					></Icon>
 				</TouchableOpacity>

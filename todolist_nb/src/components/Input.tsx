@@ -12,10 +12,10 @@ export function Input({ ...rest }: Props) {
 	return (
 		<NativeBaseInput
 			variant="filled"
-			bg="gray.500"
+			bg="gray.400"
 			borderWidth={0}
 			h={16}
-			w="65%"
+			w="75%"
 			px={4}
 			color="gray.100"
 			type="text"
