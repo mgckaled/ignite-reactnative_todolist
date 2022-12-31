@@ -1,9 +1,11 @@
 import { MaterialIcons } from '@expo/vector-icons'
 import { IconButton, IIconButtonProps } from 'native-base'
 
-type Props = IIconButtonProps & {}
+type Props = IIconButtonProps & {
+	handleAddItem: () => void
+}
 
-export function Button({ ...rest }: Props) {
+export function Button({ handleAddItem, ...rest }: Props) {
 	return (
 		<IconButton
 			_icon={{
@@ -12,9 +14,11 @@ export function Button({ ...rest }: Props) {
 				size: 8,
 				color: 'gray.100'
 			}}
+			borderRadius={10}
 			backgroundColor="blue.500"
 			color="white"
 			size={16}
+			onPress={handleAddItem}
 			{...rest}
 		/>
 	)
