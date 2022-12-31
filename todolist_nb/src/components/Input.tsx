@@ -1,21 +1,18 @@
 import { IInputProps, Input as NativeBaseInput } from 'native-base'
 
-// interface Props {
-// 	value: string
-// 	setValue: (value: string) => void
-// 	handleAddItem: () => void
-// }
+type Props = IInputProps & {
+	value: string
+	setValue: (value: string) => void
+}
 
-type Props = IInputProps & {}
-
-export function Input({ ...rest }: Props) {
+export function Input({ value, setValue, ...rest }: Props) {
 	return (
 		<NativeBaseInput
-			variant="filled"
 			bg="gray.400"
 			borderWidth={0}
+			borderRadius={10}
 			h={16}
-			w="75%"
+			w="80%"
 			px={4}
 			color="gray.100"
 			type="text"
@@ -23,11 +20,16 @@ export function Input({ ...rest }: Props) {
 			fontSize="md"
 			fontFamily="body"
 			placeholderTextColor="gray.300"
+			value={value}
+			onChangeText={text => setValue(text)}
+			returnKeyType="done"
 			_focus={{
 				borderWidth: 1,
 				borderColor: 'purple.700',
-				backgroundColor: 'gray.500'
+				backgroundColor: 'gray.400'
 			}}
+			selectionColor="gray.100"
+			cursorColor="gray.100"
 			{...rest}
 		></NativeBaseInput>
 	)
