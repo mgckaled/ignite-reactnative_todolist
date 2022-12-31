@@ -9,11 +9,11 @@ interface Props {
 
 export function Counter({ label, value, color }: Props) {
 	return (
-		<HStack alignItems="center">
+		<HStack alignItems="center" mx={4}>
 			<Text color={color} fontFamily="heading" fontSize="sm">
 				{label}
 			</Text>
-			<Box borderRadius={12} ml={2} bg="gray.300">
+			<Box borderRadius={16} ml={2} bg="gray.300">
 				<Text fontFamily="heading" fontSize="sm" color="gray.200" my={1} mx={2}>
 					{value}
 				</Text>
